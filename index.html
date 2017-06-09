@@ -1,6 +1,4 @@
 <link rel="stylesheet" type="text/css" href="../css/main.css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <title>The world's art at your fingertips!</title>
 <body>
 <div class="nav"></div>
@@ -14,15 +12,3 @@
 <script src="../scripts/underscore.js"></script>
 <script src="../scripts/backbone.js"></script>
 <script data-main="scripts/main" src="../scripts/require.js"></script>
-<script>
-    requirejs.config({
-        baseUrl: "scripts",
-        paths: {
-            "module": "app/module",
-            "pages":  "/scripts/pages",
-            "router": "/scripts/router"
-        },
-        waitSeconds: 0,
-        urlArgs: "bust=" + new Date().getTime()
-    });
-</script>
