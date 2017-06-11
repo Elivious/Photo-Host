@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: "Photo-Host",
+    baseUrl: "",
     paths: {
         "Photo-Host/app/gallery": "gallery",
         "Photo-Host/app/navigation": "navigation",
@@ -13,7 +13,7 @@ require.config({
 requirejs([
     "scripts/text",
     "core/router",
-    "gallery/gallery",
+    "app/gallery/gallery",
     "text!pages/Search-Results.html",
     "text!pages/User-Profile.html",
     "text!pages/User-Images.html"
