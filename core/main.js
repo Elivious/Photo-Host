@@ -24,19 +24,19 @@ requirejs([
         console.log("path", path);
         switch(path){
             case 'start':
-                $('.content').html(text);
+                $('.explore').html(text);
                 break;
             case 'Router':
-                $('.content').html(Router);
+                $('.explore').html(Router);
                 break;
             case 'search':
-                $('.content').html(Search);
+                $('.explore').html(Search);
                 break;
             case 'profile':
-                $('.content').html(profile);
+                $('.explore').html(profile);
                 break;
             case 'Images':
-                $('.content').html(Images);
+                $('.explore').html(Images);
                 break;
         }
 

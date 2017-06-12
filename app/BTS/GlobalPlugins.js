@@ -1,5 +1,40 @@
 $.fn.Menu = function () {
 
+    var NavModel = Backbone.Model.extend({});
+
+    var NavCollection = Backbone.Collection.extend({
+        model: NavModel
+    });
+
+    var NavView = Backbone.View.extend({
+        tagName: 'span',
+
+        render: function () {
+            this.$el.html(this.model.get("spot"));
+
+            return this;
+        }
+    });
+
+    var Navsview = Backbone.View.extend({
+        render: function () {
+            var self = this;
+
+            self.model.each(function (nav) {
+                var navview = new NavView({model: nav});
+                self.$el.append(navview.render().$el);
+            });
+        }
+    });
+
+    var navs = new NavCollection([
+        new NavModel({spot: "<span id='links'></span>"}),
+        new NavModel({spot: "<div id='navigation'></div>"})
+    ]);
+
+    var navsView = new Navsview({el: ".nav", model: navs});
+    navsView.render();
+
     var Song = Backbone.Model.extend();
 
     var Songs = Backbone.Collection.extend({
@@ -30,10 +65,10 @@ $.fn.Menu = function () {
     });
 
     var songs = new Songs([
-        new Song({ title: "New" }),
-        new Song({ title: "Hot" }),
-        new Song({ title: "Browse" }),
-        new Song({ title: "Post" }),
+        new Song({ title: "<a href='Profile'>Profile</a>    " }),
+        new Song({ title: "<a href='Results'>Search</a>   " }),
+        new Song({ title: "<a href='My-Images'>My Images</a></a>    " }),
+        new Song({ title: "Post" })
     ]);
 
     var songsView = new SongsView({ el: "#navigation", model: songs });

@@ -29,14 +29,11 @@ define([
     router = new AppRouter();
 
     $("body").on("click","a:not(a[data-bypass])",function(e){
-        // block the default link behavior
         e.preventDefault();
         if($(e.currentTarget).attr('nav') != "false"){
 
-            // take the href of the link clicked
             var href = $(this).attr("href");
 
-            // pass this link to Backbone
             Backbone.history.navigate(href, true);
 
             router.navigate(href, true);
