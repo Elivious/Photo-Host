@@ -13,11 +13,12 @@ require.config({
 requirejs([
     "scripts/text",
     "core/router",
-    "app/gallery/gallery",
+    "app/Home",
+    "app/Utility/gallery/gallery",
     "text!pages/Search-Results.html",
     "text!pages/User-Profile.html",
     "text!pages/User-Images.html"
-], function(text, Router, gallery, Search, profile, Images){
+], function(text, Router, Home, gallery, Search, profile, Images){
 
     Router.on('router-event', function(path){
         console.log("path", path);
