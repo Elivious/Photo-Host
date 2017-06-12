@@ -8,16 +8,16 @@ body {
 }
 
 .user-data {
-    background-color: aquamarine;
+    background-color: red;
     margin: 0;
 }
 
 .featured {
-    background-color: aquamarine;
+    background-color: blue;
     margin: 0;
 }
 
 .explore {
-    background-color: aquamarine;
+    background-color: yellow;
     margin: 0;
 }
