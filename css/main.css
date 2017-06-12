@@ -21,3 +21,11 @@ body {
     background-color: yellow;
     margin: 0;
 }
+
+.navMenu {
+    background-color: slategrey;
+}
+
+#NoShow {
+    display: none;
+}

@@ -67,10 +67,13 @@ $.fn.Menu = function () {
     var songs = new Songs([
         new Song({ title: "<a href='Profile'>Profile</a>    " }),
         new Song({ title: "<a href='Results'>Search</a>   " }),
-        new Song({ title: "<a href='My-Images'>My Images</a></a>    " }),
-        new Song({ title: "Post" })
+        new Song({ title: "<a href='My-Images'>My Images</a></a>    " })
     ]);
 
     var songsView = new SongsView({ el: "#navigation", model: songs });
     songsView.render();
+};
+
+$.fn.Slider = function () {
+
 };
