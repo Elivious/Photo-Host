@@ -75,5 +75,38 @@ $.fn.Menu = function () {
 };
 
 $.fn.Slider = function () {
+    var SliderModel = Backbone.Model.extend({});
 
+    var SliderCollection = Backbone.Collection.extend({
+        model: SliderModel
+    });
+
+    var SliderView = Backbone.View.extend({
+        tagName: 'span',
+
+        render: function () {
+            this.$el.html(this.model.get("spot"));
+
+            return this;
+        }
+    });
+
+    var SliderViews = Backbone.View.extend({
+        render: function () {
+            var self = this;
+
+            self.model.each(function (nav) {
+                var navview = new SliderView({model: nav});
+                self.$el.append(navview.render().$el);
+            });
+        }
+    });
+
+    var Sliders = new SliderCollection([
+        new SliderModel({spot: "HELLO"}),
+        new SliderModel({spot: "HI"})
+    ]);
+
+    var slidersView = new SliderViews({el: ".navMenu", model: Sliders});
+    slidersView.render();
 };
