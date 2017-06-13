@@ -82,7 +82,7 @@ $.fn.Slider = function () {
     });
 
     var SliderView = Backbone.View.extend({
-        tagName: 'span',
+        tagName: 'li',
 
         render: function () {
             this.$el.html(this.model.get("spot"));
@@ -103,8 +103,9 @@ $.fn.Slider = function () {
     });
 
     var Sliders = new SliderCollection([
-        new SliderModel({spot: "HELLO"}),
-        new SliderModel({spot: "HI"})
+        new SliderModel({spot: "<a href='Profile'>Profile</a>"}),
+        new SliderModel({spot: "<a href='My-Images'>Gallery</a>"}),
+        new SliderModel({spot: "<a href=''>Inbox</a>"})
     ]);
 
     var slidersView = new SliderViews({el: ".navMenu", model: Sliders});
