@@ -8,7 +8,10 @@ define([
             "": 'start',
             "Results": "Search",
             "Profile": 'profile',
-            "My-Images": 'Images'
+            "My-Images": 'Images',
+            "Browse": "Browse",
+            "New": "New",
+            "Subscriptions": "Subscriptions"
         },
 
         start: function() {
@@ -23,6 +26,15 @@ define([
         },
         Images: function() {
             router.trigger('router-event', 'Images')
+        },
+        Browse: function() {
+            router.trigger('router-event', 'Browse')
+        },
+        New: function() {
+            router.trigger('router-event', 'New')
+        },
+        Subscriptions: function() {
+            router.trigger('router-event', 'Subscriptions')
         }
     });
 

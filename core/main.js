@@ -18,8 +18,11 @@ requirejs([
     "app/Utility/gallery/gallery",
     "text!pages/Search-Results.html",
     "text!pages/User-Profile.html",
-    "text!pages/User-Images.html"
-], function(text, Router, Home, navigation, gallery, Search, profile, Images){
+    "text!pages/User-Images.html",
+    "text!pages/Browse-Hub.html",
+    "text!pages/New-Hub.html",
+    "text!pages/Subscriptions.html"
+], function(text, Router, Home, navigation, gallery, Search, profile, Images, Browse, New, Sub){
 
     Router.on('router-event', function(path){
         console.log("path", path);
@@ -38,6 +41,15 @@ requirejs([
                 break;
             case 'Images':
                 $('.explore').html(Images);
+                break;
+            case 'Browse':
+                $('.explore').html(Browse);
+                break;
+            case 'New':
+                $('.explore').html(New);
+                break;
+            case 'Subscriptions':
+                $('.explore').html(Sub);
                 break;
         }
 
