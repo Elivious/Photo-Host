@@ -1,1 +1,8 @@
-<input type="text"><button value="Browse"></button> <button value="Submit"></button>
+<input type="text" id="Search" value="Search"><button value="Browse"></button> <button value="Submit" class="Submit"></button>
+
+<script>
+    $('.Submit').click(function () {
+        var Value = document.getElementById('Search').value;
+        console.log(Value);
+    })
+</script>
