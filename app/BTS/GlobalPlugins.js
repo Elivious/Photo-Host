@@ -67,7 +67,8 @@ $.fn.Menu = function () {
     var songs = new Songs([
         new Song({ title: "<a href='Browse'>Browse</a>    " }),
         new Song({ title: "<a href='New'>New</a>   " }),
-        new Song({ title: "<a href='Subscriptions'>Subscriptions</a></a>    " })
+        new Song({ title: "<a href='Subscriptions'>Subscriptions</a></a>    " }),
+        new Song({ title: "<a href='Upload'>Upload</a></a>    "})
     ]);
 
     var songsView = new SongsView({ el: "#navigation", model: songs });

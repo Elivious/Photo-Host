@@ -11,7 +11,8 @@ define([
             "My-Images": 'Images',
             "Browse": "Browse",
             "New": "New",
-            "Subscriptions": "Subscriptions"
+            "Subscriptions": "Subscriptions",
+            "Upload": "Upload"
         },
 
         start: function() {
@@ -35,6 +36,9 @@ define([
         },
         Subscriptions: function() {
             router.trigger('router-event', 'Subscriptions')
+        },
+        Upload: function() {
+            router.trigger('router-event', 'Upload')
         }
     });
 

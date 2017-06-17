@@ -1492,7 +1492,6 @@
 
 .slideInLeft {
   animation-name: slideInLeft;
-  animation-delay: 1s;
 }
 
 @keyframes slideInRight {

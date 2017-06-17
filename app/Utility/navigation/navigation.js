@@ -4,11 +4,13 @@ define([
     function () {
         $('body').Slider();
 
-        $('button.OpenMenu').click(function () {
+        $('.OpenMenu').click(function () {
             console.log('CLICKED');
             $('#NoShow').removeAttr('id');
 
-            $('div.navMenu').addClass('slideInLeft');
+            $('div.navMenu').removeClass('slideOutLeft');
+
+            $('.navMenu').addClass('slideInLeft' + ' animated');
         });
 
         $('button.CloseMenu').click(function () {
@@ -16,6 +18,6 @@ define([
 
             $('div.navMenu').removeClass('slideInLeft');
 
-            $('div.navMenu').addClass('slideOutLeft');
+            $('div.navMenu').addClass('slideOutLeft' + ' animated');
         });
 });

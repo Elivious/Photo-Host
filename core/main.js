@@ -21,14 +21,16 @@ requirejs([
     "text!pages/User-Images.html",
     "text!pages/Browse-Hub.html",
     "text!pages/New-Hub.html",
-    "text!pages/Subscriptions.html"
-], function(text, Router, Home, navigation, gallery, Search, profile, Images, Browse, New, Sub){
+    "text!pages/Subscriptions.html",
+    "text!index.html",
+    "text!pages/Upload.html"
+], function(text, Router, Home, navigation, gallery, Search, profile, Images, Browse, New, Sub, Index, Upload){
 
     Router.on('router-event', function(path){
         console.log("path", path);
         switch(path){
             case 'start':
-                $('.explore').html(text);
+                $('.explore').html(Index);
                 break;
             case 'Router':
                 $('.explore').html(Router);
@@ -50,6 +52,9 @@ requirejs([
                 break;
             case 'Subscriptions':
                 $('.explore').html(Sub);
+                break;
+            case 'Upload':
+                $('.explore').html(Upload);
                 break;
         }
 
