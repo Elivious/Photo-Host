@@ -1,8 +1,25 @@
-<input type="text" id="Search" value="Search"><button value="Browse"></button> <button value="Submit" class="Submit"></button>
+<input type="text" id="Search" value="Search"><input type="file" id="Browse"> <button value="Submit" class="Submit"></button>
+
+<div class="Preview"></div>
 
 <script>
+
+    $(function()
+    {
+        $('#Browse').on('change',function ()
+        {
+            var filePath = $(this).val();
+            console.log(filePath);
+        });
+    });
+
     $('.Submit').click(function () {
+
+        var NewImage = document.getElementById('Browse').files[0].name;
         var Value = document.getElementById('Search').value;
         console.log(Value);
+        console.log(NewImage);
+
+        $('.Preview').append('<img src="' + NewImage +'">');
     })
 </script>

@@ -33,8 +33,8 @@
           <file leaf-file-name="Upload.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/Upload.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -89,8 +89,8 @@
               <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="90">
-                      <caret line="6" column="318" lean-forward="false" selection-start-line="6" selection-start-column="318" selection-end-line="6" selection-end-column="318" />
+                    <state relative-caret-position="80">
+                      <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
                       <folding />
                     </state>
                   </provider>
@@ -221,13 +221,13 @@
         <option value="$PROJECT_DIR$/pages/Browse-Hub.html" />
         <option value="$PROJECT_DIR$/pages/New-Hub.html" />
         <option value="$PROJECT_DIR$/pages/Subscriptions.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/animate.css" />
         <option value="$PROJECT_DIR$/app/Utility/navigation/navigation.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/core/router.js" />
-        <option value="$PROJECT_DIR$/core/main.js" />
         <option value="$PROJECT_DIR$/app/BTS/GlobalPlugins.js" />
+        <option value="$PROJECT_DIR$/core/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/Upload.html" />
       </list>
     </option>
@@ -438,6 +438,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/elivious/Desktop/web-dev/Photo-Host/Photo-Host/core/main.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -522,7 +523,7 @@
       <updated>1496957287491</updated>
       <workItem from="1496957288752" duration="21000" />
       <workItem from="1496957351735" duration="8245000" />
-      <workItem from="1497074740398" duration="13968000" />
+      <workItem from="1497074740398" duration="15519000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Index">
       <created>1496957446594</created>
@@ -706,11 +707,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497723470038</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Commit Index">
+      <created>1497724752115</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1497724752115</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22234000" />
+    <option name="totallyTimeSpent" value="23785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -875,26 +883,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="318" lean-forward="false" selection-start-line="6" selection-start-column="318" selection-end-line="6" selection-end-column="318" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="50" lean-forward="false" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -915,10 +907,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="50" lean-forward="false" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/Upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="330">
+          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding />
         </state>
       </provider>
