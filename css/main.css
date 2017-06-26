@@ -2,9 +2,23 @@ body {
     margin: 0;
 }
 
+#navigation {
+    margin-left: 55;
+}
+
+.OpenMenu {
+    float: left;
+    margin-top: 0;
+    margin-left: 8;
+}
+
 .nav {
     background-color: aquamarine;
     margin: 0;
+}
+
+.nav a {
+
 }
 
 .user-data {

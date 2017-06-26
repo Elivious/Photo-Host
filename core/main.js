@@ -22,9 +22,10 @@ requirejs([
     "text!pages/Browse-Hub.html",
     "text!pages/New-Hub.html",
     "text!pages/Subscriptions.html",
-    "text!index.html",
-    "text!pages/Upload.html"
-], function(text, Router, Home, navigation, gallery, Search, profile, Images, Browse, New, Sub, Index, Upload){
+    "text!pages/Home.html",
+    "text!pages/Upload.html",
+    "text!pages/Inbox.html",
+], function(text, Router, Home, navigation, gallery, Search, profile, Images, Browse, New, Sub, Index, Upload, Inbox){
 
     Router.on('router-event', function(path){
         console.log("path", path);
@@ -55,6 +56,9 @@ requirejs([
                 break;
             case 'Upload':
                 $('.explore').html(Upload);
+                break;
+            case 'Inbox':
+                $('.explore').html(Inbox);
                 break;
         }
 

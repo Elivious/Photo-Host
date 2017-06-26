@@ -12,7 +12,8 @@ define([
             "Browse": "Browse",
             "New": "New",
             "Subscriptions": "Subscriptions",
-            "Upload": "Upload"
+            "Upload": "Upload",
+            "Inbox": "Inbox"
         },
 
         start: function() {
@@ -39,6 +40,9 @@ define([
         },
         Upload: function() {
             router.trigger('router-event', 'Upload')
+        },
+        Inbox: function() {
+            router.trigger('router-event', 'Inbox')
         }
     });
 

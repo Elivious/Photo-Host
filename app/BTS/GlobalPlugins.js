@@ -28,7 +28,6 @@ $.fn.Menu = function () {
     });
 
     var navs = new NavCollection([
-        new NavModel({spot: "<span id='links'></span>"}),
         new NavModel({spot: "<div id='navigation'></div>"})
     ]);
 
@@ -68,7 +67,8 @@ $.fn.Menu = function () {
         new Song({ title: "<a href='Browse'>Browse</a>    " }),
         new Song({ title: "<a href='New'>New</a>   " }),
         new Song({ title: "<a href='Subscriptions'>Subscriptions</a></a>    " }),
-        new Song({ title: "<a href='Upload'>Upload</a></a>    "})
+        new Song({ title: "<a href='Upload'>Upload</a></a>    "}),
+        new Song({ title: "<a href=''>Home</a>"})
     ]);
 
     var songsView = new SongsView({ el: "#navigation", model: songs });
@@ -106,7 +106,7 @@ $.fn.Slider = function () {
     var Sliders = new SliderCollection([
         new SliderModel({spot: "<a href='Profile'>Profile</a>"}),
         new SliderModel({spot: "<a href='My-Images'>Gallery</a>"}),
-        new SliderModel({spot: "<a href=''>Inbox</a>"})
+        new SliderModel({spot: "<a href='Inbox'>Inbox</a>"})
     ]);
 
     var slidersView = new SliderViews({el: ".navMenu", model: Sliders});
